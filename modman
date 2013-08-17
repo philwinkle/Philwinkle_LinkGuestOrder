@@ -1,0 +1,6 @@
+#Philwinkle_LinkGuestOrder
+app/code/local/Philwinkle/LinkGuestOrder							app/code/local/Philwinkle/LinkGuestOrder
+app/design/frontend/base/default/layout/linkguestorder.xml			app/design/frontend/base/default/layout/linkguestorder.xml
+app/design/frontend/base/default/layout/template/linkguestorder/	app/design/frontend/base/default/layout/template/linkguestorder/
+etc/modules/Philwinkle_LinkGuestOrder.xml							etc/modules/Philwinkle_LinkGuestOrder.xml
+locale/en_US/Philwinkle_LinkGuestOrder.csv							locale/en_US/Philwinkle_LinkGuestOrder.csv
