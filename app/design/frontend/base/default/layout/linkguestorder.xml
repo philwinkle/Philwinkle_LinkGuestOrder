@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<layout>
+    <customer_account>
+        <reference name="customer_account_navigation">
+            <action method="addLink" translate="label" module="sales"><name>linkguestorder</name><path>linkguestorder/index/index/</path><label>Link Guest Order</label></action>
+        </reference>
+	</customer_account>
+
+	<linkguestorder_index_index>
+        <update handle="customer_account"/>
+		<reference name="content">
+			<block type="linkguestorder/form" name="sales.link.guest.order" template="linkguestorder/form.phtml"/>
+		</reference>
+	</linkguestorder_index_index>
+
+	<linkguestorder_index_view>
+        <update handle="customer_account"/>
+        <reference name="customer_account_navigation">
+            <action method="setActive"><path>linkguestorder/index/index/</path></action>
+        </reference>
+		<reference name="content">
+			<block type="linkguestorder/view" name="sales.link.order.view" template="linkguestorder/view.phtml"/>
+		</reference>		
+	</linkguestorder_index_view>
+</layout>

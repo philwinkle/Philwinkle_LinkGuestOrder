@@ -1,0 +1,44 @@
+<?php
+  $order = $this->getOrder();
+  $helper = Mage::helper('linkguestorder');
+?>
+
+<div class="dashboard">
+    <div class="page-title">
+        <h1><?php echo $this->__('View Order Information') ?></h1>
+    </div>
+    <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+
+    <div class="fieldset">
+
+        <table class="data-table grouped-items-table" id="guest-link-order-info">
+          <tr>
+            <td>Order Id:</td>
+            <td><?php echo $order->getIncrementId();?></td>
+          </tr>
+          <tr>
+            <td>Customer Name:</td>
+            <td><?php echo $order->getCustomerFirstname() . ' ' . $order->getCustomerLastname(); ?></td>
+          </tr>
+          <tr>
+            <td>Grand Total:</td>
+            <td><?php echo Mage::helper('core')->currency($order->getGrandTotal()); ?></td>
+          </tr>
+          <tr>
+            <td>Number of Items:</td>
+            <td><?php echo $order->getTotalQtyOrdered(); ?></td>
+          </tr>
+        </table>
+
+        <div class="buttons-set">
+            <button type="submit" onclick="confirm('<?php echo $helper->__('Are you sure?');?>',doGuestLinkRedirect())" title="<?php echo $helper->__('Link Order to My Account') ?>" class="button"><span><span><?php echo $helper->__('Link Order to My Account') ?></span></span></button>
+        </div>
+
+    </div>
+</div>
+
+<script>
+  function doGuestLinkRedirect(){
+    document.location = "<?php echo $this->getUrl('*/*/link'); ?>";
+  }
+</script>
