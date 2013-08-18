@@ -3,7 +3,9 @@ Philwinkle_LinkGuestOrder
 
 **Description**
 
-Associate a guest order to your account as a logged-in customer. This module was <a href="http://magento.stackexchange.com/questions/6772/if-email-exists-force-customer-to-login-before-ordering">created in response to a thread on Magento StackExchange</a> wherein a question was raised of how to prohibit a guest from continuing in Onepage Checkout if a registered account was already on file for that email address.  This module is, in my opinion, the better UX implementation of the same behavior and gives the power to the customer to associate to their account at a later date if they so choose.
+Associate a guest order to your account as a logged-in customer.
+
+This module was <a href="http://magento.stackexchange.com/questions/6772/if-email-exists-force-customer-to-login-before-ordering">created in response to a thread on Magento StackExchange</a> wherein a question was raised of how to prohibit a guest from continuing in Onepage Checkout if a registered account was already on file for that email address.  This module is, in my opinion, the better UX implementation of the same behavior and gives the power to the customer to associate to their account at a later date if they so choose.
 
 <img src="http://i.imgur.com/PuYFKhb.png"/>
 
